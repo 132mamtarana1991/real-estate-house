@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Style+Script&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-prev:before, .slick-next:before {
+    opacity: 1 !important;
+    color: #00c194 !important;
+}
+@media only screen and (max-width: 600px) {
+    .slick-prev:before, .slick-next:before {
+     display: none;
+    }
+  }
+  .slick-slider .slick-dots li button {
+    border-radius: 42px !important;
+    background: white !important;
+}
+.slick-slider .slick-dots li button:before {
+    font-size: 10px !important;
+    position: absolute;
+    top: 1px !important;
+    content: '•';
+    opacity: 2.25 !important;
+    color: #b1dfd4  !important;
+}
+.slick-slider .slick-dots li.slick-active button:before {
+    opacity: 1.75 !important;
+    color: #00c194 !important;
+}
+.slick-dots {
+    position: inherit  !important;
+    margin-top: 33px !important;
+    bottom: inherit !important;
+}
