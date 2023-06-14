@@ -12,14 +12,14 @@ import PropertyType from "./components/page/property-type";
 import SearchProperty from "./components/page/search-property";
 import Testimonial from "./components/page/testimonial";
 
-export default function Page() {
+export default function Page({getAllProduct, getFeaturedProduct}) {
   return (
     <main className="font-Ubuntu">
       <Banner />
       <LogoSlider />
       <About />
-      <FeaturedProperties />
-      <LatestProduct />
+      <FeaturedProperties getFeaturedProduct={getFeaturedProduct}/>
+      <LatestProduct getAllProduct={getAllProduct}/>
       {/* <Offering />
       <PropertyType />
       <NeighBorHood />

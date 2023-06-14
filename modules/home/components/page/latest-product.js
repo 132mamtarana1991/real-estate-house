@@ -2,114 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadingStyle from "../../../../components/common/heading-style";
 
-export default function LatestProduct() {
-  const products = [
-    {
-      id: 1,
-      buy: "Rent",
-      category: "Popular",
-      apartments: "Apartments",
-      home: "Studio Home",
-      title: "Triple Story House for Rent",
-      loction: "New Jersey",
-      bedroom: "3",
-      washroom: "2",
-      Sqft: "2000",
-      price: "450,000",
-    },
-    {
-      id: 2,
-      buy: "Rent",
-      category: "Popular",
-      apartments: "Villa",
-      home: "Studio Home",
-      title: "Triple",
-      loction: "New Jersey",
-      bedroom: "3",
-      washroom: "2",
-      Sqft: "2000",
-      price: "450,000",
-    },
-    {
-      id: 3,
-      buy: "Rent",
-      category: "Popular",
-      apartments: "Apartments",
-      home: "Studio Home",
-      title: "Triple Story ",
-      loction: "New Jersey",
-      bedroom: "3",
-      washroom: "2",
-      Sqft: "2000",
-      price: "450,000",
-    },
-    {
-      id: 4,
-      buy: "Rent",
-      category: "Popular",
-      apartments: "Apartments",
-      home: "Studio Home",
-      title: " Rent",
-      loction: "New Jersey",
-      bedroom: "3",
-      washroom: "2",
-      Sqft: "2000",
-      price: "450,000",
-    },
-    {
-      id: 5,
-      buy: "Rent",
-      category: "Popular",
-      apartments: "Apartments",
-      home: "Studio Home",
-      title: " Story House for Rent",
-      loction: "New Jersey",
-      bedroom: "3",
-      washroom: "2",
-      Sqft: "2000",
-      price: "450,000",
-    },
-    {
-      id: 6,
-      buy: "Rent",
-      category: "Popular",
-      apartments: "Apartments",
-      home: "Studio Home",
-      title: "Triple Story  Rent",
-      loction: "New Jersey",
-      bedroom: "3",
-      washroom: "2",
-      Sqft: "2000",
-      price: "450,000",
-    },
-    {
-      id: 7,
-      buy: "Rent",
-      category: "Popular",
-      apartments: "Apartments",
-      home: "Studio Home",
-      title: "Triple Story House for Rent",
-      loction: "New Jersey",
-      bedroom: "3",
-      washroom: "2",
-      Sqft: "2000",
-      price: "450,000",
-    },
-    {
-      id: 8,
-      buy: "Rent",
-      category: "Popular",
-      apartments: "Apartments",
-      home: "Studio Home",
-      title: "Triple Story House for Rent",
-      loction: "New Jersey",
-      bedroom: "3",
-      washroom: "2",
-      Sqft: "2000",
-      price: "450,000",
-    },
-  ];
-
+export default function LatestProduct({ getAllProduct }) {
+  const getProduct = getAllProduct ? getAllProduct.slice(0, 8) : [];
   return (
     <div className="pt-[100px] pb-[90px] px-0 ">
       <div className=" text-center pb-16">
@@ -120,7 +14,7 @@ export default function LatestProduct() {
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2 max-w-maincontainer mx-auto">
-        {products?.map((item, index) => {
+        {getProduct?.map((item, index) => {
           return (
             <div
               key={index}
@@ -153,7 +47,7 @@ export default function LatestProduct() {
                           height={14}
                         ></Image>
                       </span>
-                      {item.loction}
+                      {item.location}
                     </li>
                     <li className=" ml-3">
                       <span class=" text-[#929292] text-sm">
@@ -176,7 +70,7 @@ export default function LatestProduct() {
                           <span>Beds </span>
 
                           <span>
-                            <span> {item.bedroom}</span>3{" "}
+                            <span> {item.beds}</span>
                           </span>
                         </span>
                       </li>
@@ -191,9 +85,7 @@ export default function LatestProduct() {
                         <span className="">
                           <span className="">Baths </span>
 
-                          <span className="">
-                            <span>0</span> {item.washroom}{" "}
-                          </span>
+                          <span className="">{item.washroom}</span>
                         </span>
                       </li>
                       <li className=" flex items-center">
@@ -205,14 +97,14 @@ export default function LatestProduct() {
                           />
                         </span>
                         <span className="">
-                          <span className=""> {item.Sqft} </span>
+                          <span className=""> {item.sqmeters} </span>
 
                           <span className="">
                             <span>Sqft</span>
                           </span>
                         </span>
                       </li>
-                    </ul>{" "}
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -225,7 +117,7 @@ export default function LatestProduct() {
           className="bg-[#00c194] text-sm font-medium overflow-hidden px-[22px] py-2 rounded-[3px] border-[none] text-white"
           href="/product-details"
         >
-          Show All Products{" "}
+          Show All Products
         </Link>
       </div>
     </div>
