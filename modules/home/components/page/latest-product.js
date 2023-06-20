@@ -27,12 +27,12 @@ export default function LatestProduct({ getAllProduct }) {
                 <div className="my-3 sm:w-3/4	 px-[22px]">
                   <div className=" flex items-center justify-between">
                     <h3 className="text-[18px] leading-8 pt-[0px] font-semibold">
-                      <Link href="/product-detail">{item.title}</Link>
+                      <Link   href={`/products/${item._id}`}>{item.title}</Link>
                     </h3>
 
                     <Link
                       className="bg-[#00c194] text-sm font-medium overflow-hidden px-[22px] py-2 rounded-[3px] border-[none] text-white"
-                      href="/product-details"
+                      href={`/products/${item._id}`}
                     >
                       Details{" "}
                     </Link>

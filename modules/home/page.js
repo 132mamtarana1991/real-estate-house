@@ -13,6 +13,7 @@ import SearchProperty from "./components/page/search-property";
 import Testimonial from "./components/page/testimonial";
 
 export default function Page({getAllProduct, getFeaturedProduct}) {
+  console.log(getAllProduct,'getAllProduct')
   return (
     <main className="font-Ubuntu">
       <Banner />
@@ -20,8 +21,8 @@ export default function Page({getAllProduct, getFeaturedProduct}) {
       <About />
       <FeaturedProperties getFeaturedProduct={getFeaturedProduct}/>
       <LatestProduct getAllProduct={getAllProduct}/>
-      {/* <Offering />
-      <PropertyType />
+       <Offering />
+     {/* <PropertyType />
       <NeighBorHood />
       <SearchProperty />
       <ExclusiveAgetns />

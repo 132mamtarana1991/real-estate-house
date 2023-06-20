@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import Link from "next/link";
 import Image from "next/image";
 import HeadingStyle from "../../../../components/common/heading-style";
@@ -5,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function FeaturedProperties({ getFeaturedProduct }) {
+  const router = useRouter();
   var settings = {
     dots: true,
     className: "center",
@@ -87,17 +89,17 @@ export default function FeaturedProperties({ getFeaturedProduct }) {
               <div className="-mt-5 pt-0 px-[22px]">
                 <Link
                   className="relative bg-white text-sm z-10 leading-none text-[#00c194] font-normal mt-0 px-3 py-2 rounded-[3px];"
-                  href="/product-detail"
+                  href={`/products/${item._id}`}
                 >
                   {item.apartments}
                 </Link>
               </div>
               <div className="my-3  px-[22px]">
-                <Link className="text-[#00c194]" href="/product-detail">
+                <Link className="text-[#00c194]"    href={`/products/${item._id}`}>
                   {"Studio Home"}
                 </Link>
                 <h3 className="text-[22px] leading-8 pt-[5px] font-semibold">
-                  <Link href="/product-detail">{item.title}</Link>
+                  <Link   href={`/products/${item._id}`}>{item.title}</Link>
                 </h3>
                 <ul className="text-sm text-[#929292] py-3">
                   <li className="flex items-center">
@@ -167,7 +169,7 @@ export default function FeaturedProperties({ getFeaturedProduct }) {
                             <span>By</span>
                             <Link
                               className=""
-                              href="https://www.radiustheme.com/demo/wordpress/themes/homlisti/agent/robert_blue/"
+                              href={`/products/${item._id}`}
                             >
                               Robert Blue{" "}
                             </Link>
@@ -176,12 +178,12 @@ export default function FeaturedProperties({ getFeaturedProduct }) {
                       </div>
                     </li>
                     <li className="action-btn">
-                      <a
+                      <Link
                         className="bg-[#00c194] text-sm font-medium relative z-[1] overflow-hidden mx-[30px] my-3 px-[22px] py-2 rounded-[3px] border-[none] text-white"
-                        href="https://www.radiustheme.com/demo/wordpress/themes/homlisti/property/brand-new-shopping-mall-for-buy/"
+                       href={`/products/${item._id}`}
                       >
                         Details{" "}
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
