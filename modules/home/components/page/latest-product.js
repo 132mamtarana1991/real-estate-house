@@ -13,7 +13,7 @@ export default function LatestProduct({ getAllProduct }) {
           title={"Featured Property For Sale"}
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2 max-w-maincontainer mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2 md:container mx-auto">
         {getProduct?.map((item, index) => {
           return (
             <div

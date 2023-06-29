@@ -65,7 +65,7 @@ export default function LogoSlider() {
   ];
   return (
     <div className="bg-[#FBFBFB] sm:py-[60px] border-b-[#F2F2F2] border-b border-solid sm:mb-32 overflow-hidden">
-    <Slider {...settings} className="max-w-maincontainer mx-auto ">
+    <Slider {...settings} className="md:container mx-auto ">
       {hello.map((item, index) => {
         return (
           <div key={index} className="grayscale outline:none transition ease-in-out delay-150  cursor-pointer hover:grayscale-[0%] hover:shadow-[0_1px_0px_0_#00c194]">

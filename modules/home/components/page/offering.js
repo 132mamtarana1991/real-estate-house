@@ -3,7 +3,7 @@ import Image from "next/image";
 import HeadingStyle from "../../../../components/common/heading-style";
 export default function Offering() {
   return (
-    <div className="max-w-maincontainer mx-auto relative">
+    <div className="md:container mx-auto relative">
       <div className="grid grid-cols-2 gap-4">
         <div className="..."> <img src="/images/property.png"></img></div>
         <div className=" mt-18">
