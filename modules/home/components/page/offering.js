@@ -23,10 +23,10 @@ export default function Offering() {
             centuries, but also the leap into electronic. 
           </p>
           <ul>
-            <li className="text-[#212121] text-base leading-normal mb-2.5 flex items-center"><Image src="/images/right1.png" width="12" height='8' className=" mr-2"></Image> Outstanding property</li>
-            <li className="text-[#212121] text-base leading-normal mb-2.5 flex items-center"><Image src="/images/right1.png" width="12" height='8' className=" mr-2"></Image>Modern City Locations</li>
-            <li className="text-[#212121] text-base leading-normal mb-2.5 flex items-center"><Image src="/images/right1.png" width="12" height='8' className=" mr-2"></Image>Specialist services</li>
-            <li className="text-[#212121] text-base leading-normal mb-2.5 flex items-center"><Image src="/images/right1.png" width="12" height='8' className=" mr-2"></Image>Market-leading research</li>
+            <li className="text-[#212121] text-base leading-normal mb-2.5 flex items-center"><Image src="/images/right1.png" alt="about" width="12" height='8' className=" mr-2"></Image> Outstanding property</li>
+            <li className="text-[#212121] text-base leading-normal mb-2.5 flex items-center"><Image src="/images/right1.png"alt="about" width="12" height='8' className=" mr-2"></Image>Modern City Locations</li>
+            <li className="text-[#212121] text-base leading-normal mb-2.5 flex items-center"><Image src="/images/right1.png"alt="about" width="12" height='8' className=" mr-2"></Image>Specialist services</li>
+            <li className="text-[#212121] text-base leading-normal mb-2.5 flex items-center"><Image src="/images/right1.png"alt="about" width="12" height='8' className=" mr-2"></Image>Market-leading research</li>
           </ul>
         </div>
       </div>

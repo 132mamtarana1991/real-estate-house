@@ -45,12 +45,13 @@ export default function LatestProduct({ getAllProduct }) {
                           src="/images/loction.png"
                           width={10}
                           height={14}
+                          alt="about"
                         ></Image>
                       </span>
                       {item.location}
                     </li>
                     <li className=" ml-3">
-                      <span class=" text-[#929292] text-sm">
+                      <span className=" text-[#929292] text-sm">
                         <b>$ {item.price}</b> /total
                       </span>
                     </li>
@@ -64,6 +65,7 @@ export default function LatestProduct({ getAllProduct }) {
                             width={32}
                             height={32}
                             src={"/images/bed.png"}
+                            alt="about"
                           />
                         </span>
                         <span>
@@ -80,6 +82,7 @@ export default function LatestProduct({ getAllProduct }) {
                             width={32}
                             height={32}
                             src={"/images/bed.png"}
+                            alt="about"
                           />
                         </span>
                         <span className="">
@@ -94,6 +97,7 @@ export default function LatestProduct({ getAllProduct }) {
                             width={32}
                             height={32}
                             src={"/images/bed.png"}
+                            alt="about"
                           />
                         </span>
                         <span className="">

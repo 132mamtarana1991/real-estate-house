@@ -41,7 +41,7 @@ export default function About() {
             </button>
           </div>
           <div className="...">
-            <Image src="/images/home-4-sec-1.jpg" width={740} height={540} />
+            <Image src="/images/home-4-sec-1.jpg" width={740} height={540} alt="about"/>
           </div>
         </div>
       </div>

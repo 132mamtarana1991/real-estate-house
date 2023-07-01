@@ -7,7 +7,6 @@ import Offering from "./components/page/offering";
 import RegisterNow from "./components/page/register-now";
 
 export default function Page({getAllProduct, getFeaturedProduct}) {
-  console.log(getAllProduct,'getAllProduct')
   return (
     <main className="font-Ubuntu">
       <Banner />

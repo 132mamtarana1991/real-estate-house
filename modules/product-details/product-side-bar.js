@@ -13,21 +13,21 @@ export default function ProductSideBar({getSingleProduct}) {
         </span>
       </div>
     </div>
-    <h1 class="text-[28px] text-[#212121] font-semibold mb-[3px]">
+    <h1 className="text-[28px] text-[#212121] font-semibold mb-[3px]">
      {getSingleProduct?.title}
     </h1>
-    <ul class=" mb-1.5 m-0 p-0">
+    <ul className=" mb-1.5 m-0 p-0">
       <li className="inline-block text-[15px] relative text-[#878c9f]">
-        <i class="fas fa-map-marker-alt  text-[#878c9f] text-base mr-2"></i>
+        <i className="fas fa-map-marker-alt  text-[#878c9f] text-base mr-2"></i>
         Jackson, Brentwood Drive
-        <span class="rtcl-delimiter">,</span> New Jersey{" "}
+        <span className="rtcl-delimiter">,</span> New Jersey{" "}
       </li>
       <li className="inline-block text-[15px] relative text-[#878c9f]">
-        <i class="far fa-clock  text-[#878c9f] text-base mr-2"></i>1
+        <i className="far fa-clock  text-[#878c9f] text-base mr-2"></i>1
         year ago
       </li>
       <li className="inline-block text-[15px] relative text-[#878c9f]">
-        <i class="far fa-eye  text-[#878c9f] text-base mr-2"></i>Views:{" "}
+        <i className="far fa-eye  text-[#878c9f] text-base mr-2"></i>Views:{" "}
         <span>1,653</span>{" "}
       </li>
     </ul>
@@ -37,126 +37,133 @@ export default function ProductSideBar({getSingleProduct}) {
         className="rounded"
       />
     </div>
-    <div class="rounded bg-white border pt-[25px] pb-[30px] px-[30px] border-solid border-[#e7e7e7] mt-6">
-      <h2 class="text-xl text-[#212121] mb-2">Overview</h2>
+    <div className="rounded bg-white border pt-[25px] pb-[30px] px-[30px] border-solid border-[#e7e7e7] mt-6">
+      <h2 className="text-xl text-[#212121] mb-2">Overview</h2>
       <div className="">
-        <ul class="flex flex-wrap">
+        <ul className="flex flex-wrap">
           <li className="relative w-3/12 mt-2.5 mb-[27px]">
-          <div class="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
+          <div className="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
               <Image
                 width={21}
                 height={21}
+                alt="about"
                 src={"/images/icon1.png"}
               />
             </div>
-            <div class="amenities-content">
-              <h2 class="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
+            <div className="amenities-content">
+              <h2 className="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
                 ID No{" "}
               </h2>
-              <span class="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
+              <span className="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
                 17438
               </span>
             </div>
           </li>
           <li className="relative w-3/12 mt-2.5 mb-[27px]">
-            <div class="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
+            <div className="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
               <Image
                 width={21}
                 height={21}
+                alt="about"
                 src={"/images/icon1.png"}
               />
             </div>
-            <div class="amenities-content">
-              <h2 class="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
+            <div className="amenities-content">
+              <h2 className="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
                 Type{" "}
               </h2>
-              <span class="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
-                Apartment
+              <span className="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
+                {getSingleProduct?.type}
               </span>
             </div>
           </li>
           <li className="relative w-3/12 mt-2.5 mb-[27px]">
-          <div class="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
+          <div className="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
               <Image
                 width={21}
+                alt="about"
                 height={21}
                 src={"/images/icon1.png"}
               />
             </div>
-            <div class="amenities-content">
-              <h2 class="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
+            <div className="amenities-content">
+              <h2 className="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
               Parking
               </h2>
-              <span class="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
-                Yes
+              <span className="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
+              {getSingleProduct?.Parking}
               </span>
             </div>
           </li>
           <li className="relative w-3/12 mt-2.5 mb-[27px]">
-          <div class="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
+          <div className="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
               <Image
                 width={21}
                 height={21}
+                alt="about"
                 src={"/images/icon1.png"}
               />
             </div>
-            <div class="amenities-content">
-              <h2 class="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
-                ID No{" "}
+            <div className="amenities-content">
+              <h2 className="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
+              Bedroom{" "}
               </h2>
-              <span class="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
-                17438
+              <span className="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
+              {getSingleProduct?.beds}
               </span>
             </div>
           </li>
           <li className="relative w-3/12 mt-2.5 mb-[27px]">
-          <div class="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
+          <div className="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
               <Image
                 width={21}
                 height={21}
+                alt="about"
                 src={"/images/icon1.png"}
               />
             </div>
-            <div class="amenities-content">
-              <h2 class="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
-                ID No{" "}
+            <div className="amenities-content">
+              <h2 className="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
+              Bath
               </h2>
-              <span class="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
-                17438
+              <span className="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
+                {getSingleProduct?.washroom}
               </span>
             </div>
           </li>
           <li className="relative w-3/12 mt-2.5 mb-[27px]">
-          <div class="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
+          <div className="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
               <Image
                 width={21}
                 height={21}
                 src={"/images/icon1.png"}
+                alt="about"
               />
             </div>
-            <div class="amenities-content">
-              <h2 class="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
-                ID No{" "}
+            <div className="amenities-content">
+              <h2 className="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
+              Sqft
               </h2>
-              <span class="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
-                17438
+              <span className="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
+              {getSingleProduct?.sqmeters}
               </span>
             </div>
           </li>
           <li className="relative w-3/12 mt-2.5 mb-[27px]">
-          <div class="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
+          <div className="float-left mr-[15px] text-xl w-[50px] h-[50px] border rounded bg-white shadow-[0_4px_18px_0_rgba(188,192,202,0.26)] flex items-center justify-center text-[#00c194] transition-[0.3s] m-0 border-solid border-[rgb(232,233,241)]">
               <Image
                 width={21}
                 height={21}
                 src={"/images/icon1.png"}
+                alt="about"
               />
             </div>
-            <div class="amenities-content">
-              <h2 class="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
-                ID No{" "}
+            <div className="amenities-content">
+              <h2 className="text-sm text-[#212121] leading-[1.4] font-medium mt-0.5 m-0">
+              Purpose
               </h2>
-              <span class="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
-                17438
+              <span className="text-[#878c9f] text-sm leading-loose flex flex-wrap items-center text-left justify-start;">
+              For Sell
               </span>
             </div>
           </li>
@@ -164,7 +171,7 @@ export default function ProductSideBar({getSingleProduct}) {
       </div>
     </div>
     <div className="rounded bg-white border pt-[25px] pb-[30px] px-[30px] border-solid border-[#e7e7e7]">
-      <h2 class="text-xl text-[#212121] mb-5">About This Listing</h2>
+      <h2 className="text-xl text-[#212121] mb-5">About This Listing</h2>
       <p className="text-base leading-[30px] text-[#788593] font-normal">
         Brand New Shopping Mall is not currently for buy or for rent on
         Trulia. The description and property data below may have been
@@ -181,108 +188,34 @@ export default function ProductSideBar({getSingleProduct}) {
       </p>
     </div>
     <div className="rounded bg-white border pt-[25px] pb-[30px] px-[30px] border-solid border-[#e7e7e7]">
-      <h2 class="text-xl text-[#212121] mb-5">Features & Amenities</h2>
+      <h2 className="text-xl text-[#212121] mb-5">Features & Amenities</h2>
       <ul className="flex flex-col rounded mb-0 pl-0">
         <li className="leading-[23px] flex mt-px  py-[9px] border-[none]">
           <span className="w-full grid grid-cols-[1fr_1fr_1fr] gap-2">
-            <span className="text-[#212121] font-medium min-w-[140px]  mr-2.5 flex items-center  pb-2">
-              <Image
-                width={18}
-                height={18}
-                src={"/images/right.png"}
-                class="text-[#00c194] mr-1"
-              />
-              <span className="text-[#6c757d] text-sm font-normal">
-                TV Cable
+            {getSingleProduct?.facility.map((item)=>{
+              return(
+                <span className="text-[#212121] font-medium min-w-[140px]  mr-2.5 flex items-center  pb-2">
+                <Image
+                  width={18}
+                  height={18}
+                  src={"/images/right.png"}
+                  className="text-[#00c194] mr-1"
+                  alt="about"
+                />
+                <span className="text-[#6c757d] text-sm font-normal">
+                {item}
+                </span>
               </span>
-            </span>
+              )
+            })}
+         
 
-            <span className="w-full grid grid-cols-[1fr_1fr_1fr] gap-2">
-              <span className="text-[#212121] font-medium min-w-[140px]  mr-2.5 flex items-center  pb-2">
-                <Image
-                  width={18}
-                  height={18}
-                  src={"/images/right.png"}
-                  class="text-[#00c194] mr-1"
-                />
-                <span className="text-[#6c757d] text-sm font-normal">
-                  {" "}
-                  Air Conditioning
-                </span>
-              </span>
-            </span>
-            <span className="w-full grid grid-cols-[1fr_1fr_1fr] gap-2">
-              <span className="text-[#212121] font-medium min-w-[140px]  mr-2.5 flex items-center  pb-2">
-                <Image
-                  width={18}
-                  height={18}
-                  src={"/images/right.png"}
-                  class="text-[#00c194] mr-1"
-                />
-                <span className="text-[#6c757d] text-sm font-normal">
-                  Barbeque
-                </span>
-              </span>
-            </span>
-            <span className="w-full grid grid-cols-[1fr_1fr_1fr] gap-2">
-              <span className="text-[#212121] font-medium min-w-[140px]  mr-2.5 flex items-center  pb-2">
-                <Image
-                  width={18}
-                  height={18}
-                  src={"/images/right.png"}
-                  class="text-[#00c194] mr-1"
-                />
-                <span className="text-[#6c757d] text-sm font-normal">
-                  Gym
-                </span>
-              </span>
-            </span>
-            <span className="w-full grid grid-cols-[1fr_1fr_1fr] gap-2">
-              <span className="text-[#212121] font-medium min-w-[140px]  mr-2.5 flex items-center  pb-2">
-                <Image
-                  width={18}
-                  height={18}
-                  src={"/images/right.png"}
-                  class="text-[#00c194] mr-1"
-                />
-                <span className="text-[#6c757d] text-sm font-normal">
-                  {" "}
-                  Swimming Pool
-                </span>
-              </span>
-            </span>
-            <span className="w-full grid grid-cols-[1fr_1fr_1fr] gap-2">
-              <span className="text-[#212121] font-medium min-w-[140px]  mr-2.5 flex items-center  pb-2">
-                <Image
-                  width={18}
-                  height={18}
-                  src={"/images/right.png"}
-                  class="text-[#00c194] mr-1"
-                />
-                <span className="text-[#6c757d] text-sm font-normal">
-                  Lawn
-                </span>
-              </span>
-            </span>
-            <span className="w-full grid grid-cols-[1fr_1fr_1fr] gap-2">
-              <span className="text-[#212121] font-medium min-w-[140px]  mr-2.5 flex items-center  pb-2">
-                <Image
-                  width={18}
-                  height={18}
-                  src={"/images/right.png"}
-                  class="text-[#00c194] mr-1"
-                />
-                <span className="text-[#6c757d] text-sm font-normal">
-                  Refrigerator
-                </span>
-              </span>
-            </span>
           </span>
         </li>
       </ul>
     </div>
     <div className="rounded bg-white border pt-[25px] pb-[30px] px-[30px] border-solid border-[#e7e7e7]">
-      <h2 class="text-xl text-[#212121] mb-5">Map Location</h2>
+      <h2 className="text-xl text-[#212121] mb-5">Map Location</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
         width="100%"
