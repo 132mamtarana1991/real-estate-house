@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 export default function ProductSideBar({getSingleProduct}) {
+  console.log(getSingleProduct,'getSingleProduct')
   return (
     <div className="col-span-2 ">
     <div className="flex items-center mb-2;">

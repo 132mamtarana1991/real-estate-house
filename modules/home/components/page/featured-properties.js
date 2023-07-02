@@ -55,7 +55,10 @@ export default function FeaturedProperties({ getFeaturedProduct }) {
     ],
   };
   const addProduct = (product) => {
-    dispatch(compareProduct(product));
+    if(compareProducts?.length === 2){
+     return alert('no more add')
+    }
+    return dispatch(compareProduct(product));
   }
   return (
     <div className=" sm:px-0 py-[100px] bg-[#0E2E50] sm:mt-32 px-2 ">

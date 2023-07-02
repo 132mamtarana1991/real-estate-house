@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-[90%] md:container mx-auto flex-col lg:flex-row py-10 flex">
         <div className="md:pr-[11rem] text-center md:text-left md:basis-2/4">
           <h4 className="text-[#1D1D1D] font-semibold text-[2.1rem] leading-10 mb-2">
-            Bizzio
+            hello
           </h4>
           <p className="text-[#1D1D1D] mb-[2rem] md:mb-10 leading-7">
             Professional housecleaning services, you want to make sure that you
