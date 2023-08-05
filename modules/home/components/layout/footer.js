@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-    sdasd
+    <h1>footer</h1>
     </>
   );
 }
