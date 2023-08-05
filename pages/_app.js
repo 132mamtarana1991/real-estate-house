@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from '../redux/store';
 import '../styles/globals.css';
-
+import '../styles/header.css';
 export default function App({ Component, pageProps }) {
   const { pathname } = useRouter();
   const getLayout = Component.getLayout || ((page) => page);
