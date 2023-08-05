@@ -7,6 +7,7 @@ import { persistor, store } from '../redux/store';
 import '../styles/login.css';
 import '../styles/header.css';
 import '../styles/footer.css';
+import '../styles/main.css';
 export default function App({ Component, pageProps }) {
   const { pathname } = useRouter();
   const getLayout = Component.getLayout || ((page) => page);
