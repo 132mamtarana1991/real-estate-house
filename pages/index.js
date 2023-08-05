@@ -10,12 +10,12 @@ Home.getLayout = function getLayout(content, props) {
 };
 
 export async function getStaticProps() {
-  const getAllProduct = await request(`/property/getAll`, 'GET')
-  const getFeaturedProduct = await request(`/property/find/featured`, 'GET')
+  // const getAllProduct = await request(`/property/getAll`, 'GET')
+  // const getFeaturedProduct = await request(`/property/find/featured`, 'GET')
   return {
     props: {
-      getAllProduct,
-      getFeaturedProduct,
+      // getAllProduct,
+      // getFeaturedProduct,
       seo: {
         canonical: 'http://localhost:3000/',
         title: 'Home - Welcome to real estate',

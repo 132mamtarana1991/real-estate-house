@@ -9,7 +9,7 @@ Home.getLayout = function getLayout(content, props) {
   return <Layout {...props}>{content}</Layout>;
 };
 export const getStaticPaths = async () => {
-  const getAllProduct = await request(`/property/getAll`, 'GET')
+  // const getAllProduct = await request(`/property/getAll`, 'GET')
 
   const paths = getAllProduct?.map((item) => {
     return {
@@ -27,7 +27,7 @@ export async function getStaticProps(context) {
   const getSingleProduct = await request(`/property/find/${id}`, 'GET')
   return {
     props: {
-      getSingleProduct,
+      // getSingleProduct,
       seo: {
         canonical: 'http://localhost:3000/',
         title: 'Home - Welcome to real estate',
